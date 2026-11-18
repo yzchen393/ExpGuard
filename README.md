@@ -46,11 +46,16 @@ python -m expguard evaluate-online --benchmark STATE-Bench \
   --endpoint "$LLM_BASE_URL" --operator-model "$LLM_MODEL"
 ```
 
+
 ## External Dependencies
 
-- [ReasoningBank](https://github.com/google-research/reasoning-bank) supplies the extraction prompts.
-- [BGE-M3](https://github.com/FlagOpen/FlagEmbedding) supplies the encoder weights published as `BAAI/bge-m3`.
-- [MemForm](https://github.com/opanhw/memform-code) supplies the offline benchmark data.
-- [STATE-Bench](https://github.com/microsoft/STATE-Bench) supplies the online benchmark data.
+- [ReasoningBank](https://github.com/google-research/reasoning-bank) — Experience extraction.
+- [BGE-M3](https://github.com/FlagOpen/FlagEmbedding) — Text encoder.
+- [MemForm](https://github.com/opanhw/memform-code) — Offline benchmark.
+- [CIK-Bench](https://github.com/UCSC-VLAA/CIK-Bench) — Offline benchmark.
+- [SMP-Bench](https://github.com/ivaxi0s/LLM-agent-memory-poisoning) — Offline benchmark.
+- [STATE-Bench](https://github.com/microsoft/STATE-Bench) — Online benchmark.
+- [AppWorld](https://github.com/StonyBrookNLP/appworld) — Online benchmark.
+- [MemoryArena](https://github.com/ZexueHe/MemoryArena) — Online benchmark.
 
-Prepare benchmark cases in ExpGuard JSONL format. Set `LLM_BASE_URL` and `LLM_MODEL` for an OpenAI-compatible endpoint, and set `EXPGUARD_API_KEY` if required.
+Prepare benchmark cases in ExpGuard JSONL format. Configure `LLM_BASE_URL`, `LLM_MODEL`, and `EXPGUARD_API_KEY` if required.
